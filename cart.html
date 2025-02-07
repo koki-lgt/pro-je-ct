@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Cart: SOMA bookstore</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="soma">SOMA</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">HomePage</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="details.html">Books</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </nav>
+      <div class="search">
+        <input type="text" placeholder="search" />
+        <button type="submit">Go</button>
+      </div>
+    </header>
+    <div class="hero">
+      <div class="hero-content">
+        <h1>Cart</h1>
+      </div>
+      <div class="cartbx">
+        <div class="cartrec">
+          <div class="bookimg" id="bookimg"></div>
+          <div class="bookinfo book">
+            <div class="booktitle" id="booktitle"></div>
+            <div class="bookauthor" id="bookauthor"></div>
+            <div class="bookcost" id="bookcost"></div>
+          </div>
+        </div>
+      </div>
+      <form action="submit">
+         <h3>FILL THIS IN..</h3>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="youremail@gmail.com" required>
+
+    <label for="telephone">Tel Number:</label>
+    <input type="number" id="telephone" name="telephone" placeholder="Number">
+
+    <!-- Hidden fields -->
+    <input type="hidden" name="author" id="authortxt" value="">
+    <input type="hidden" name="cost" id="costtxt" value="">
+
+    <button type="submit">Submit</button>
+</form>
+    </div>
+    <script src="scripts/srcipts.js"></script>
+    <footer>
+      <p>&copy;2025 Soma Bookstore. All rights reserved</p>
+    </footer>
+  </body>
+</html>
